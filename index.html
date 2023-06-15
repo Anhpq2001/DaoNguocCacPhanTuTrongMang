@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dao nguoc cac phan tu trong mang</title>
+</head>
+<body>
+<input type="submit" onclick="daoNguocChuoi()" value="Reverse">
+<script>
+    function daoNguocChuoi() {
+        let arr = [23, 44, 54, 11, 67, 10];
+        let first = 0;
+        let last = arr.length - 1;
+        while (first < last) {
+            let b = arr[first];
+            arr[first] = arr[last];
+            arr[last] = b;
+            first++;
+            last--;
+        }
+        document.write(arr);
+    }
+</script>
+</body>
+</html>
